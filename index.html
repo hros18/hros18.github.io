@@ -29,7 +29,7 @@
       "https://github.com/hros18"
     ],
     "jobTitle": "Freelance Backend Engineer",
-    "description": "Freelance, language-agnostic backend developer with 6+ years building reliable, scalable systems."
+    "description": "Senior Software Engineer with 5+ years of experience in backend development, available for freelance and contract work."
   }
   </script>
 </head>
@@ -39,7 +39,6 @@
     <ul>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -51,8 +50,8 @@
       <div class="hero-left">
         <div class="profile-wrap">
           <img
-            src="assets/profile.jpg?v=3"
-            srcset="assets/profile.jpg?v=3 1x"
+            src="assets/profile.jpg?v=4"
+            srcset="assets/profile.jpg?v=4 1x"
             sizes="(max-width:720px) 110px, 160px"
             width="160" height="160"
             loading="lazy"
@@ -64,7 +63,7 @@
       <div class="hero-right">
         <span class="badge">Available for freelance & contract work</span>
         <h1>Harold Rosales Hernandez</h1>
-        <p class="role">Freelance Backend Engineer — Language-agnostic contractor</p>
+        <p class="role">Senior Software Engineer — Freelance Backend Specialist</p>
         <p class="meta">📍 Vigo, Spain &nbsp; | &nbsp; 📞 <a href="tel:+34613391058">(+34) 613 39 10 58</a> &nbsp; | &nbsp; ✉️ <a href="mailto:haroldrosaleshernandez@gmail.com">haroldrosaleshernandez@gmail.com</a></p>
         <p class="links">
           <a id="linkedin" href="https://www.linkedin.com/in/hros18/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
@@ -72,11 +71,10 @@
           <a href="https://github.com/hros18" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a>
         </p>
 
-        <p class="summary">Freelance, language-agnostic backend developer with 6+ years building reliable, scalable systems for startups and enterprises across healthcare, tourism, fintech, and e-commerce. I design and implement backend services, APIs, and integrations, with a focus on clean architecture, performance, and maintainability.</p>
+        <p class="summary">Senior Software Engineer with 5+ years of experience in backend development and continuous process improvement, working across healthcare, tourism, and financial services. I design and implement backend services, APIs, and integrations, with a focus on clean architecture, performance, and driving best practices in development and agile methodologies. Former ICPC contestant, passionate about continuous learning and collaborative teamwork.</p>
 
         <div class="cta-row">
           <a class="btn" href="mailto:haroldrosaleshernandez@gmail.com?subject=Contract%20work%20inquiry" aria-label="Contact Harold to hire">Hire me — Let's talk</a>
-          <a class="btn secondary" href="#projects">View work</a>
         </div>
 
         <div class="lang-list">
@@ -214,14 +212,6 @@
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Selected Projects</h2>
-      <p class="muted">Examples of past work and links to repositories — send me project names and descriptions and I'll add them here.</p>
-      <div class="projects-grid">
-        <!-- Add project cards here: .project with link, short description -->
-      </div>
-    </section>
-
     <section id="education">
       <h2>Education & Additional</h2>
       <div class="edu-grid">
@@ -237,43 +227,35 @@
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>If you'd like to discuss a freelance engagement or contract work, email me at <a href="mailto:haroldrosaleshernandez@gmail.com">haroldrosaleshernandez@gmail.com</a> or use the phone number above.</p>
-      <p class="cta-row">
+    <section id="contact" class="contact-card">
+      <h2>Let's work together</h2>
+      <p class="summary">Have a backend project that needs a hand — new build, migration, or performance fix? I'm currently available for freelance and contract engagements.</p>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:haroldrosaleshernandez@gmail.com?subject=Contract%20work%20inquiry">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">haroldrosaleshernandez@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+34613391058">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">(+34) 613 39 10 58</span>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/hros18/" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">in/hros18</span>
+        </a>
+        <a class="contact-item" href="https://github.com/hros18" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">@hros18</span>
+        </a>
+      </div>
+      <div class="cta-row">
         <a class="btn" href="mailto:haroldrosaleshernandez@gmail.com?subject=Contract%20work%20inquiry">Hire me — Let's talk</a>
-        <a class="btn secondary" href="https://www.linkedin.com/in/hros18/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-      </p>
-      <p id="profile-status" class="muted">Checking profile image status…</p>
+      </div>
     </section>
 
     <footer>
       <p>© Harold Rosales • Freelance Backend Engineer • Deployed to GitHub Pages</p>
     </footer>
   </main>
-
-  <script>
-    // Check whether the profile image loaded successfully and show helpful troubleshooting if not.
-    (function(){
-      const img = document.querySelector('.profile');
-      const status = document.getElementById('profile-status');
-      function showFailure(){
-        status.innerHTML = 'Profile image did not load. Try a hard-refresh (Ctrl/Cmd+Shift+R) or open the site in an incognito window. Direct image URL: <a href="https://hros18.github.io/assets/profile.jpg" target="_blank" rel="noopener">assets/profile.jpg</a>';
-        status.style.color = 'var(--muted)';
-      }
-      function check(){
-        if (!img) { status.textContent = '' ; return; }
-        if (img.complete && img.naturalWidth > 0) {
-          status.textContent = '';
-        } else if (img.complete && img.naturalWidth === 0) {
-          showFailure();
-        } else {
-          img.addEventListener('error', showFailure);
-          img.addEventListener('load', function(){ status.textContent = ''; });
-        }
-      }
-      if (document.readyState === 'complete') check(); else window.addEventListener('load', check);
-    })();
-  </script>
 </body>
 </html>
