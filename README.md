@@ -1,19 +1,21 @@
 Harold Rosales — Portfolio
 
-This repository contains a single-page portfolio site generated from Harold's CV and enhanced with technology logos and a LinkedIn-style English profile.
+This repository contains a single-page freelance-focused portfolio site generated from Harold's CV. The site now emphasises freelance/contract work and lists primary languages in the requested order.
 
 Live site:
 https://hros18.github.io
 
-How to update
-- Replace the profile image:
-  - Add your image file to assets/profile.jpg (or .png) and overwrite the existing placeholder name if present.
-  - Or edit index.html and change the <img> src to point to a direct image URL.
+Updates in this commit
+- Rewrote the header summary to be contractor/freelance focused and language-agnostic.
+- Reordered and highlighted primary languages: C#, Python, TypeScript, PHP.
+- Removed large logo grid and switched to concise chips for skills/technologies.
+- Kept profile image reference at assets/profile.jpg. Please confirm if you want me to add the image you attached directly to the repo; if yes, reply "please add photo" and I will commit the image to assets/profile.jpg.
 
-- Update LinkedIn URL:
-  - Edit the element with id="linkedin" in index.html to your preferred LinkedIn URL (already set to https://www.linkedin.com/in/hros18/).
+How to replace the profile image yourself
+- Upload the image via GitHub web UI to assets/profile.jpg, or commit it locally and push.
+- Or provide a direct image URL (ending in .jpg/.png) and I can update index.html to point to it.
 
-- To feature specific projects or add company logos, tell me which repositories or project descriptions you want to highlight and I will add them.
-
-Use LinkedIn photo
-- If you want me to fetch and add the image from your LinkedIn profile page https://www.linkedin.com/in/hros18/, please upload the image here or paste a direct image URL (jpg/png). LinkedIn pages are often behind authentication and hotlinking is unreliable — providing the image file or a direct image link is the most reliable option.
+If you'd like, I can also:
+- Add a Projects section highlighting specific repos (send names + one-line descriptions).
+- Add a small downloadable resume link (if you provide the PDF file).
+- Adjust colors or typography.

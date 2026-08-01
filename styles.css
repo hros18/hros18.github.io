@@ -19,22 +19,21 @@ body{
 .container{max-width:980px;margin:28px auto;padding:28px}
 
 .hero{display:flex;gap:20px;align-items:center;background:var(--glass);padding:20px;border-radius:12px;backdrop-filter:blur(6px)}
-.profile{width:120px;height:120px;border-radius:12px;border:2px solid rgba(255,255,255,0.05);object-fit:cover}
+.profile{width:140px;height:140px;border-radius:12px;border:2px solid rgba(255,255,255,0.05);object-fit:cover}
 .hero-right h1{margin:0;font-size:1.8rem}
 .role{color:var(--accent);font-weight:600;margin:6px 0}
 .meta{color:var(--muted);margin:6px 0}
 .links a{color:var(--text);text-decoration:underline}
 .summary{color:var(--muted);margin-top:8px}
+.lang-list{margin-top:10px}
+.lang-list ul{margin:6px 0 0 18px;color:var(--muted)}
 
 section{margin-top:22px;background:var(--card);padding:18px;border-radius:10px}
 section h2{margin-top:0;color:var(--accent)}
 .job h3{margin:0 0 8px 0}
 .job ul{margin:0 0 0 18px;padding:0;color:var(--muted)}
 
-.tech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:8px}
-.tech{display:flex;gap:10px;align-items:center;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px}
-.tech img{width:34px;height:34px}
-.tech span{color:var(--muted)}
+.services{margin:6px 0 0 18px;color:var(--muted)}
 
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .chips span{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;color:var(--muted);font-size:0.9rem}
