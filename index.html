@@ -11,7 +11,8 @@
   <main class="container">
     <header class="hero">
       <div class="hero-left">
-        <img src="assets/profile.jpg" alt="Harold Rosales photo" class="profile">
+        <!-- cache-busting query param to force browsers to fetch the latest image -->
+        <img src="assets/profile.jpg?v=2" alt="Harold Rosales — profile photo" class="profile">
       </div>
       <div class="hero-right">
         <h1>Harold Rosales Hernandez</h1>
@@ -100,12 +101,38 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>If you'd like to discuss a freelance engagement or contract work, email me at <a href="mailto:haroldrosaleshernandez@gmail.com">haroldrosaleshernandez@gmail.com</a> or use the phone number above. I typically respond within 24 hours.</p>
-      <p>Profile image: uploaded and in use.</p>
+      <p id="profile-status" class="muted">Checking profile image status…</p>
     </section>
 
     <footer>
       <p>© Harold Rosales • Freelance Backend Engineer • Deployed to GitHub Pages</p>
     </footer>
   </main>
+
+  <script>
+    // Check whether the profile image loaded successfully and show helpful troubleshooting if not.
+    (function(){
+      const img = document.querySelector('.profile');
+      const status = document.getElementById('profile-status');
+      function showFailure(){
+        status.innerHTML = 'Profile image did not load. Try a hard-refresh (Ctrl/Cmd+Shift+R) or open the site in an incognito window. Direct image URL: <a href="https://hros18.github.io/assets/profile.jpg" target="_blank" rel="noopener">https://hros18.github.io/assets/profile.jpg</a>';
+        status.style.color = 'var(--muted)';
+      }
+      function check(){
+        if (!img) { status.textContent = '' ; return; }
+        // naturalWidth > 0 implies image decoded correctly
+        if (img.complete && img.naturalWidth > 0) {
+          status.textContent = '';
+        } else if (img.complete && img.naturalWidth === 0) {
+          showFailure();
+        } else {
+          // wait for load/error events
+          img.addEventListener('error', showFailure);
+          img.addEventListener('load', function(){ status.textContent = ''; });
+        }
+      }
+      if (document.readyState === 'complete') check(); else window.addEventListener('load', check);
+    })();
+  </script>
 </body>
 </html>
