@@ -6,19 +6,57 @@
   <title>Harold Rosales — Freelance Backend Engineer</title>
   <link rel="stylesheet" href="styles.css">
   <meta name="description" content="Harold Rosales — Freelance, language-agnostic backend developer. C#, Python, TypeScript, PHP. AWS, Azure, Docker.">
+  <link rel="canonical" href="https://hros18.github.io/">
+  <meta name="theme-color" content="#0b0f14">
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harold Rosales — Freelance Backend Engineer">
+  <meta property="og:description" content="Freelance, language-agnostic backend developer (C#, Python, TypeScript, PHP). Available for contract work.">
+  <meta property="og:url" content="https://hros18.github.io/">
+  <meta property="og:image" content="https://hros18.github.io/assets/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- JSON-LD: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Harold Rosales",
+    "url": "https://hros18.github.io",
+    "sameAs": [
+      "https://www.linkedin.com/in/hros18/",
+      "https://github.com/hros18"
+    ],
+    "jobTitle": "Freelance Backend Engineer",
+    "description": "Freelance, language-agnostic backend developer with 7+ years building reliable, scalable systems."
+  }
+  </script>
 </head>
 <body>
   <main class="container">
     <header class="hero">
       <div class="hero-left">
-        <!-- cache-busting query param to force browsers to fetch the latest image -->
-        <img src="assets/profile.jpg?v=2" alt="Harold Rosales — profile photo" class="profile">
+        <!-- Responsive / lazy-loading profile image; replace with multiple sizes if available -->
+        <img
+          src="assets/profile.jpg?v=2"
+          srcset="assets/profile.jpg?v=2 1x"
+          sizes="(max-width:720px) 96px, 140px"
+          width="140" height="140"
+          loading="lazy"
+          alt="Harold Rosales — profile photo"
+          class="profile">
       </div>
       <div class="hero-right">
         <h1>Harold Rosales Hernandez</h1>
         <p class="role">Freelance Backend Engineer — Language-agnostic contractor</p>
         <p class="meta">📍 Vigo, Spain &nbsp; | &nbsp; 📞 <a href="tel:+34613391058">(+34) 613 39 10 58</a> &nbsp; | &nbsp; ✉️ <a href="mailto:haroldrosaleshernandez@gmail.com">haroldrosaleshernandez@gmail.com</a></p>
-        <p class="links">🔗 <a id="linkedin" href="https://www.linkedin.com/in/hros18/" target="_blank" rel="noopener">LinkedIn</a> &nbsp; • &nbsp; <a href="https://github.com/hros18" target="_blank" rel="noopener">GitHub</a></p>
+        <p class="links">
+          <a id="linkedin" href="https://www.linkedin.com/in/hros18/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+          &nbsp; • &nbsp;
+          <a href="https://github.com/hros18" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a>
+        </p>
+
+        <p><a class="btn" href="mailto:haroldrosaleshernandez@gmail.com?subject=Contract%20work%20inquiry" aria-label="Contact Harold to hire">Hire me — Let's talk</a></p>
 
         <p class="summary">Freelance, language-agnostic backend developer with 7+ years building reliable, scalable systems for startups and enterprises. I design and implement backend services, integrations, and event-driven architectures with a focus on maintainability, automated tests and delivering business value quickly.</p>
 
@@ -88,6 +126,14 @@
         <span>Docker</span>
         <span>SQL / NoSQL</span>
         <span>TDD</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <p class="muted">Examples of past work and links to repositories — send me project names and descriptions and I’ll add them here.</p>
+      <div class="projects-grid">
+        <!-- Add project cards here: .project with link, short description -->
       </div>
     </section>
 

@@ -5,6 +5,8 @@
   --accent:#6ee7b7;
   --text:#e6eef3;
   --glass:rgba(255,255,255,0.03);
+  --btn-bg: #6ee7b7;
+  --btn-fg: #06281b;
 }
 
 *{box-sizing:border-box}
@@ -28,6 +30,33 @@ body{
 .lang-list{margin-top:10px}
 .lang-list ul{margin:6px 0 0 18px;color:var(--muted)}
 
+.btn{
+  display:inline-block;
+  background:var(--btn-bg);
+  color:var(--btn-fg);
+  padding:8px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+.btn:focus{outline:3px solid rgba(110,231,183,0.18);outline-offset:3px}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+  margin-top:12px;
+}
+.project{
+  background:rgba(255,255,255,0.02);
+  padding:12px;
+  border-radius:8px;
+  color:var(--muted);
+}
+
+.muted{color:var(--muted)}
+
 section{margin-top:22px;background:var(--card);padding:18px;border-radius:10px}
 section h2{margin-top:0;color:var(--accent)}
 .job h3{margin:0 0 8px 0}
@@ -46,4 +75,8 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:0.9rem}
   .hero-right{flex:1}
   .profile{width:96px;height:96px}
   .container{padding:16px;margin:16px}
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
 }
