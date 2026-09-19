@@ -39,4 +39,4 @@ Then open: `http://localhost:8000`
 
 ## Deploy
 
-Deploy by pushing changes to the configured GitHub Pages branch for this repository.
+This repository is served as a GitHub Pages user site. Deploy by pushing changes to the `main` branch (repository root), which is the Pages source.
