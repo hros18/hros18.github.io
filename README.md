@@ -1,21 +1,42 @@
-Harold Rosales — Portfolio
+# Harold Rosales Hernández — Portfolio
 
-This repository contains a single-page freelance-focused portfolio site generated from Harold's CV. The site now emphasises freelance/contract work and lists primary languages in the requested order.
+Single-page portfolio website for [https://hros18.github.io](https://hros18.github.io).
 
-Live site:
-https://hros18.github.io
+## Positioning
 
-Updates in this commit
-- Rewrote the header summary to be contractor/freelance focused and language-agnostic.
-- Reordered and highlighted primary languages: C#, Python, TypeScript, PHP.
-- Removed large logo grid and switched to concise chips for skills/technologies.
-- Kept profile image reference at assets/profile.jpg. Please confirm if you want me to add the image you attached directly to the repo; if yes, reply "please add photo" and I will commit the image to assets/profile.jpg.
+This portfolio presents Harold Rosales Hernández as:
 
-How to replace the profile image yourself
-- Upload the image via GitHub web UI to assets/profile.jpg, or commit it locally and push.
-- Or provide a direct image URL (ending in .jpg/.png) and I can update index.html to point to it.
+- **Senior Backend Engineer | Refactoring & Performance**
+- Language-agnostic backend engineer with strongest specialization in **C#/.NET**
+- Focused on backend modernization, legacy refactoring, performance optimization, async/concurrent processing, APIs/integrations, and event-driven systems
 
-If you'd like, I can also:
-- Add a Projects section highlighting specific repos (send names + one-line descriptions).
-- Add a small downloadable resume link (if you provide the PDF file).
-- Adjust colors or typography.
+## Site content
+
+The page includes:
+
+- Technical profile summary and contact section (Vigo, Spain)
+- Experience highlights (AMV Solutions, Blueberry Consultants, Travel Services)
+- Focus/services section (modernization, performance, integrations, quality)
+- Selected projects section with concise project outcomes
+- Education and additional background
+
+## Tech stack
+
+- Static HTML + CSS
+- Hosted on GitHub Pages
+
+## Run locally
+
+Because this is a static site, no build step is required. Open `index.html` directly in a browser, or serve the repository root with any static server.
+
+Example:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open: `http://localhost:8000`
+
+## Deploy
+
+Deploy by pushing changes to the configured GitHub Pages branch for this repository.
